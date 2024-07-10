@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav.active {
+  background-color: #555;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu li a {
+  color: rgb(72, 69, 69);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-btn, .signup-btn {
+  background-color: #2c7165;
+  color: #1e1d1d;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cart-btn:hover, .signup-btn:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    background-color: white;
+    display: block;
+    height: 2px;
+    width: 25px;
+    margin: 5px auto;
+    transition: background-color 0.3s;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-btn:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}

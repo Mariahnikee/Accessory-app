@@ -1,0 +1,13 @@
+.checkout-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.checkout-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-page p {
+  font-size: 1rem;
+}
